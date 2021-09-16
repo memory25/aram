@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/build/static/css/main.c19f52f4.chunk.css",
+    "main.js": "/build/static/js/main.c6d45cb2.chunk.js",
+    "runtime-main.js": "/build/static/js/runtime-main.3da2be01.js",
+    "static/js/2.e334e22c.chunk.js": "/build/static/js/2.e334e22c.chunk.js",
+    "index.html": "/build/index.html",
+    "precache-manifest.e2579d65b0d1b7e2b5a9b3cbf9d6c28c.js": "/build/precache-manifest.e2579d65b0d1b7e2b5a9b3cbf9d6c28c.js",
+    "service-worker.js": "/build/service-worker.js",
+    "static/js/2.e334e22c.chunk.js.LICENSE.txt": "/build/static/js/2.e334e22c.chunk.js.LICENSE.txt",
+    "static/media/main.sass": "/build/static/media/pulo.69e6808a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3da2be01.js",
+    "static/js/2.e334e22c.chunk.js",
+    "static/css/main.c19f52f4.chunk.css",
+    "static/js/main.c6d45cb2.chunk.js"
+  ]
+}

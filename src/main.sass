@@ -1,0 +1,51 @@
+body
+    margin: 0
+    
+#app
+    width: 100vw
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    background-image: url(./imgs/pulo.png)
+    background-size: cover
+    
+    .rule
+        display: flex
+        flex-direction: column
+        align-items: center
+        .option
+            display: flex
+            width: 200px
+            justify-content: space-between
+            margin-bottom: 10px
+            input[name='banList']
+                width: 100px
+        label
+            user-select: none
+
+    .classification
+        display: flex
+        justify-content: space-between
+        min-height: 500px
+
+        .blue, .red, .ban
+            width: 100px
+            display: flex
+            flex-wrap: wrap
+            position: relative
+            span
+                position: absolute
+                width: 100%
+                height: 20px
+                transform: translateY(-20px)
+        .champIcon
+            width: 50px
+            height: 50px
+            box-sizing: border-box
+            border: 1px solid red
+            background-image: url(./imgs/champion50.png)
+        .ban
+            .champIcon
+                filter: grayscale(90%)
+                cursor: pointer
