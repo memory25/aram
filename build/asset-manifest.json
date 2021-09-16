@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "build/static/css/main.e818ea23.chunk.css",
-    "main.js": "build/static/js/main.c6d45cb2.chunk.js",
-    "runtime-main.js": "build/static/js/runtime-main.02da1313.js",
-    "static/js/2.e334e22c.chunk.js": "build/static/js/2.e334e22c.chunk.js",
-    "index.html": "build/index.html",
-    "precache-manifest.0375355977d3d03618b90c1a0851bed8.js": "build/precache-manifest.0375355977d3d03618b90c1a0851bed8.js",
-    "service-worker.js": "build/service-worker.js",
-    "static/js/2.e334e22c.chunk.js.LICENSE.txt": "build/static/js/2.e334e22c.chunk.js.LICENSE.txt",
-    "static/media/main.sass": "build/static/media/pulo.69e6808a.png"
+    "main.css": "/aram/build/static/css/main.0f742598.chunk.css",
+    "main.js": "/aram/build/static/js/main.c6d45cb2.chunk.js",
+    "runtime-main.js": "/aram/build/static/js/runtime-main.2941ade4.js",
+    "static/js/2.e334e22c.chunk.js": "/aram/build/static/js/2.e334e22c.chunk.js",
+    "index.html": "/aram/build/index.html",
+    "precache-manifest.412d2f379b8455ac54ba4580a3db9748.js": "/aram/build/precache-manifest.412d2f379b8455ac54ba4580a3db9748.js",
+    "service-worker.js": "/aram/build/service-worker.js",
+    "static/js/2.e334e22c.chunk.js.LICENSE.txt": "/aram/build/static/js/2.e334e22c.chunk.js.LICENSE.txt",
+    "static/media/main.sass": "/aram/build/static/media/pulo.69e6808a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.02da1313.js",
+    "static/js/runtime-main.2941ade4.js",
     "static/js/2.e334e22c.chunk.js",
-    "static/css/main.e818ea23.chunk.css",
+    "static/css/main.0f742598.chunk.css",
     "static/js/main.c6d45cb2.chunk.js"
   ]
 }
