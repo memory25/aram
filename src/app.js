@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { champTable, champCn2En } from './appConst';
 import calcGroup from './classification';
+import lottery from './lottery';
+
+import Button from './button';
 
 
 const champList = Object.keys(champTable).sort();
@@ -19,28 +22,29 @@ export default function App(props) {
 
   const [ restChampList, setRestChampList ] = useState(champList);
   const [ banList, setBanList ] = useState([]);
+  const [ lotteryList, setLotteryList ] = useState([]);
 
   const [ grp, setGrp ] = useState(() => calcGroup({
     'pool': [],
   }));
-  console.log(grp);
+
   const [ dupli, setDupli ] = useState(true);
   const [ num, setNum ] = useState(5);
   const [ cube, setCube ] = useState(3);
   const [ ban, setBan ] = useState('');
 
-  const mulSet = new Set();
+  /* const mulSet = new Set();
   const blueSet = new Set(grp.blue);
   grp.red.forEach((n) => {
     if (blueSet.has(n)) {
       mulSet.add(n);
     }
-  });
+  }); */
 
 
   return (
     <>
-      <div className='rule'>
+      <div className='rule font-effect-emboss'>
         <div className='option'>
           <label htmlFor='dupli'>雙方可重複</label>
           <input
@@ -99,38 +103,48 @@ export default function App(props) {
           />
           <datalist id='banList'>{restChampList.map((name) => <option key={name} value={name}>{champTable[name].championName}</option>)}</datalist>
 
-          <button onClick={() => {
-            const isExist = !!(champCn2En[ban] || champTable[ban]);
-            if (isExist) {
-              const targetName = champCn2En[ban] || ban;
-              setBanList((pre) => [ ...new Set(pre).add(targetName) ]);
-              setBan('');
-              setRestChampList((pre) => {
-                const _set = new Set(pre);
-                _set.delete(targetName);
+          <Button
+            text='新增'
+            onClick={() => {
+              const isExist = !!(champCn2En[ban] || champTable[ban]);
+              if (isExist) {
+                const targetName = champCn2En[ban] || ban;
+                setBanList((pre) => [ ...new Set(pre).add(targetName) ]);
+                setBan('');
+                setRestChampList((pre) => {
+                  const _set = new Set(pre);
+                  _set.delete(targetName);
 
-                return [ ..._set ].sort();
-              });
-              setGrp(calcGroup({ 'pool': [] }));
-            }
-          }}
-          >
-            +
-          </button>
+                  return [ ..._set ].sort();
+                });
+                setGrp(calcGroup({ 'pool': [] }));
+                setLotteryList([]);
+              }
+            }}
+          />
         </div>
-        <button onClick={() => {
-          setGrp(calcGroup({
-            'pool': restChampList,
-            'canDupli': dupli,
-            'count': num * (Number(cube) + 1),
-          }));
-        }}
-        >
-          產生
-        </button>
+        <Button
+          text='產生'
+          onClick={() => {
+            setGrp(calcGroup({
+              'pool': restChampList,
+              'canDupli': dupli,
+              'count': num * (Number(cube) + 1),
+            }));
+            setLotteryList(lottery());
+          }}
+        />
+        <div className='lottery font-effect-fire-animation'>
+          {lotteryList.length !== 0 && (
+            <>
+              <span>中大獎請自選</span>
+              {lotteryList.map((src) => <img key={src} src={src} alt='' />)}
+            </>
+          )}
+        </div>
       </div>
 
-      <div className='classification'>
+      <div className='classification font-effect-3d'>
         <div className='blue'>
           <span style={{ 'flex': '0 0 100%', 'background': 'blue', 'color': '#fff' }}>Blue</span>
           {grp.blue.map((name) => (
@@ -161,6 +175,7 @@ export default function App(props) {
                   return [ ..._set ].sort();
                 });
                 setGrp(calcGroup({ 'pool': [] }));
+                setLotteryList([]);
               }}
             >
               <div className='champIcon' style={{ 'backgroundPosition': `0 ${champTable[name].idx * -50}px` }} />

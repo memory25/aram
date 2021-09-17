@@ -1,5 +1,10 @@
+//@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation|3d|emboss')
+
 body
     margin: 0
+    //font-family: 'Raleway', sans-serif
+    font-family: 'Rancho', serif
     
 #app
     width: 100vw
@@ -14,20 +19,34 @@ body
         display: flex
         flex-direction: column
         align-items: center
+        color: grey
+        font-size: 20px
         .option
             display: flex
             width: 200px
             justify-content: space-between
+            align-items: center
             margin-bottom: 10px
             input[name='banList']
                 width: 100px
         label
             user-select: none
 
+        .lottery
+            display: flex
+            align-items: center
+            span
+                font-size: 30px
+            img
+                width: 60px
+                height: 60px
+
     .classification
         display: flex
         justify-content: space-between
         min-height: 500px
+        font-size: 30px
+        padding: 0 50px
 
         .blue, .red, .ban
             width: 100px
@@ -37,15 +56,118 @@ body
             span
                 position: absolute
                 width: 100%
-                height: 20px
-                transform: translateY(-20px)
+                height: 40px
+                transform: translateY(-40px)
+                text-align: center
         .champIcon
             width: 50px
             height: 50px
             box-sizing: border-box
-            border: 1px solid red
             background-image: url(./imgs/champion50.png)
+            border-radius: 100%
         .ban
             .champIcon
                 filter: grayscale(90%)
                 cursor: pointer
+                border-radius: 0
+
+
+
+.btnWrapper
+    .btn
+        position: relative
+        display: inline-block
+        padding: 5px
+        color: #fa6900
+        text-decoration: none
+        text-transform: uppercase
+        transition: 0.5s
+        letter-spacing: 4px
+        overflow: hidden
+        animation: colorAni 2s linear infinite alternate
+        cursor: pointer
+        font-weight: 900
+    .btn:hover
+        background: #fa6900
+        color: #fff
+        box-shadow: 0 0 5px #fa6900, 0 0 25px #fa6900, 0 0 50px #fa6900, 0 0 200px #fa6900
+        
+
+    .btn span
+        position: absolute
+        display: block
+
+    .btn span:nth-child(1)
+        top: 0
+        left: 0
+        width: 100%
+        height: 2px
+        background: linear-gradient(90deg,transparent,#fa6900)
+        animation: animate1 1s linear infinite
+
+@keyframes colorAni
+    0%
+        filter: hue-rotate(0deg)
+    100%
+        filter: hue-rotate(180deg)
+
+@keyframes animate1
+    0%
+        left: -100%
+    
+    50%,100%
+        left: 100%
+    
+.btnWrapper
+    .btn span:nth-child(2)
+        top: -100%
+        right: 0
+        width: 2px
+        height: 100%
+        background: linear-gradient(180deg,transparent,#fa6900)
+        animation: animate2 1s linear infinite
+        animation-delay: 0.25s
+
+@keyframes animate2
+    0%
+        top: -100%
+    
+    50%,100%
+        top: 100%
+    
+.btnWrapper
+    .btn span:nth-child(3)
+        bottom: 0
+        right: 0
+        width: 100%
+        height: 2px
+        background: linear-gradient(270deg,transparent,#fa6900)
+        animation: animate3 1s linear infinite
+        animation-delay: 0.50s
+
+@keyframes animate3
+    0%
+        right: -100%
+    
+    50%,100%
+        right: 100%
+    
+
+
+.btnWrapper
+    .btn span:nth-child(4)
+        bottom: -100%
+        left: 0
+        width: 2px
+        height: 100%
+        background: linear-gradient(360deg,transparent,#fa6900)
+        animation: animate4 1s linear infinite
+        animation-delay: 0.75s
+
+@keyframes animate4
+    0%
+        bottom: -100%
+    
+    50%,100%
+        bottom: 100%
+    
