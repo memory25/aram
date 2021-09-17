@@ -8,7 +8,5 @@ import xia2 from './imgs/xia2.png';
 const list = [ bosen, dragon, fat, roger, xia1, xia2 ];
 
 export default function lottery() {
-  return list.filter(() => Math.floor(Math.random() * 10 + 1) === 1);
+  return list.filter(() => Math.floor(Math.random() * 100 + 1) <= 15);
 }
-
-console.log(lottery());

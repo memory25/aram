@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import { champTable, champCn2En } from './appConst';
-import calcGroup from './classification';
-import lottery from './lottery';
 
 import Button from './button';
+import Darkmode from './darkmode';
+
+import calcGroup from './classification';
+import lottery from './lottery';
 
 
 const champList = Object.keys(champTable).sort();
 
 
-window.qq = true;
 export default function App(props) {
   // console.log(champTable, champCn2En);
   // console.log(champList);
@@ -44,6 +45,7 @@ export default function App(props) {
 
   return (
     <>
+      <Darkmode />
       <div className='rule font-effect-emboss'>
         <div className='option'>
           <label htmlFor='dupli'>雙方可重複</label>
@@ -146,7 +148,7 @@ export default function App(props) {
 
       <div className='classification font-effect-3d'>
         <div className='blue'>
-          <span style={{ 'flex': '0 0 100%', 'background': 'blue', 'color': '#fff' }}>Blue</span>
+          <span className='darkmodeReverse' style={{ 'flex': '0 0 100%', 'background': 'blue', 'color': '#fff' }}>Blue</span>
           {grp.blue.map((name) => (
             <div key={name}>
               <div className='champIcon' style={{ 'backgroundPosition': `0 ${champTable[name].idx * -50}px` }} />
@@ -155,7 +157,7 @@ export default function App(props) {
         </div>
 
         <div className='ban'>
-          <span style={{ 'flex': '0 0 100%', 'background': 'black', 'color': '#fff' }}>Ban</span>
+          <span className='darkmodeReverse' style={{ 'flex': '0 0 100%', 'background': 'black', 'color': '#fff' }}>Ban</span>
           {banList.map((name) => (
             <div
               key={name}
@@ -184,7 +186,7 @@ export default function App(props) {
         </div>
 
         <div className='red'>
-          <span style={{ 'flex': '0 0 100%', 'background': 'red', 'color': '#fff' }}>Red</span>
+          <span className='darkmodeReverse' style={{ 'flex': '0 0 100%', 'background': 'red', 'color': '#fff' }}>Red</span>
           {grp.red.map((name) => (
             <div key={name}>
               <div className='champIcon' style={{ 'backgroundPosition': `0 ${champTable[name].idx * -50}px` }} />

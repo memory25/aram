@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "12b8ea0a59c29ca0de5f5335c6380af7",
+    "revision": "72cb258a61ba21a3712f777110cac586",
     "url": "/aram/build/index.html"
   },
   {
-    "revision": "3a08f820f8cdc4c042e9",
-    "url": "/aram/build/static/css/main.191cb194.chunk.css"
+    "revision": "9d3e32e045df83017e77",
+    "url": "/aram/build/static/css/main.8d750fcf.chunk.css"
   },
   {
-    "revision": "9bacaac03da2174b2838",
-    "url": "/aram/build/static/js/2.6a3b3145.chunk.js"
+    "revision": "5c12151b475af27584f2",
+    "url": "/aram/build/static/js/2.03ae302d.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/aram/build/static/js/2.6a3b3145.chunk.js.LICENSE.txt"
+    "url": "/aram/build/static/js/2.03ae302d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3a08f820f8cdc4c042e9",
-    "url": "/aram/build/static/js/main.82709ca9.chunk.js"
+    "revision": "9d3e32e045df83017e77",
+    "url": "/aram/build/static/js/main.08fd9098.chunk.js"
   },
   {
     "revision": "730df67392ce176e016c",
