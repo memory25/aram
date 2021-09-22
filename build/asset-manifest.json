@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/aram/build/static/css/main.8d750fcf.chunk.css",
-    "main.js": "/aram/build/static/js/main.08fd9098.chunk.js",
+    "main.css": "/aram/build/static/css/main.5d31df86.chunk.css",
+    "main.js": "/aram/build/static/js/main.69d241c7.chunk.js",
     "runtime-main.js": "/aram/build/static/js/runtime-main.2941ade4.js",
     "static/js/2.03ae302d.chunk.js": "/aram/build/static/js/2.03ae302d.chunk.js",
     "index.html": "/aram/build/index.html",
-    "precache-manifest.c19b7b42a207124a12870a8eb8587383.js": "/aram/build/precache-manifest.c19b7b42a207124a12870a8eb8587383.js",
+    "precache-manifest.963f0b076fe6c535b12277eadd0162e5.js": "/aram/build/precache-manifest.963f0b076fe6c535b12277eadd0162e5.js",
     "service-worker.js": "/aram/build/service-worker.js",
     "static/js/2.03ae302d.chunk.js.LICENSE.txt": "/aram/build/static/js/2.03ae302d.chunk.js.LICENSE.txt",
     "static/media/bosen.png": "/aram/build/static/media/bosen.93c0a6a0.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.2941ade4.js",
     "static/js/2.03ae302d.chunk.js",
-    "static/css/main.8d750fcf.chunk.css",
-    "static/js/main.08fd9098.chunk.js"
+    "static/css/main.5d31df86.chunk.css",
+    "static/js/main.69d241c7.chunk.js"
   ]
 }

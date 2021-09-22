@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "72cb258a61ba21a3712f777110cac586",
+    "revision": "fd1890df811e96a6e454b208f265b640",
     "url": "/aram/build/index.html"
   },
   {
-    "revision": "9d3e32e045df83017e77",
-    "url": "/aram/build/static/css/main.8d750fcf.chunk.css"
+    "revision": "48a7d1e2140f3c02ef8d",
+    "url": "/aram/build/static/css/main.5d31df86.chunk.css"
   },
   {
     "revision": "5c12151b475af27584f2",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/aram/build/static/js/2.03ae302d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9d3e32e045df83017e77",
-    "url": "/aram/build/static/js/main.08fd9098.chunk.js"
+    "revision": "48a7d1e2140f3c02ef8d",
+    "url": "/aram/build/static/js/main.69d241c7.chunk.js"
   },
   {
     "revision": "730df67392ce176e016c",

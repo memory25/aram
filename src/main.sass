@@ -19,9 +19,11 @@ body
     height: 100vh
     display: flex
     flex-direction: column
-    justify-content: space-around
     background-image: url(./imgs/pulo.png)
     background-size: cover
+    background-attachment: fixed
+    overflow: scroll
+    position: relative
     
     .rule
         display: flex
@@ -29,6 +31,7 @@ body
         align-items: center
         color: grey
         font-size: 20px
+        padding: 10px
         .option
             display: flex
             width: 200px
@@ -54,7 +57,8 @@ body
         justify-content: space-between
         min-height: 500px
         font-size: 30px
-        padding: 0 50px
+        padding: 50px
+        padding-bottom: 0
 
         .blue, .red, .ban
             width: 100px

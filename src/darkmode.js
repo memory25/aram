@@ -52,6 +52,7 @@ export default () => {
         'background': 'transparent',
         'cursor': 'pointer',
         'border-width': '1px 0',
+        'margin': '5px 0',
       }}
     >
       {text}
